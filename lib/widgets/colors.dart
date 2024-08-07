@@ -10,6 +10,8 @@ class AppColors {
     static const Color minTextColor = Color.fromRGBO(156, 160, 175, 1);
     static const Color starColor = Color.fromRGBO(255, 176, 1, 1);
     static const Color heartColor = Color.fromRGBO(233, 1, 1, 1);
+    static const Color inputBoxColor = Color.fromRGBO(217,217,217,0.96);
+
     
 
 
