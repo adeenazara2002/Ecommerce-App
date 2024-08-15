@@ -1,15 +1,15 @@
 import 'package:ecommerceapp/widgets/colors.dart';
 import 'package:flutter/material.dart';
 
-class Register extends StatefulWidget {
-  const Register({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
   @override
-  State<Register> createState() => _RegisterState();
+  State<Login> createState() => _LoginState();
 }
 
 final TextEditingController fullnameController = TextEditingController();
 
-class _RegisterState extends State<Register> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -211,9 +211,9 @@ class _RegisterState extends State<Register> {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 60.0, vertical: 20.0),
+                                horizontal: 95.0, vertical: 20.0),
                             child: Text(
-                              'Create Account',
+                              'Sign In',
                               style: TextStyle(
                                   fontSize: 15.0,
                                   fontFamily: 'Poppins-Regular',

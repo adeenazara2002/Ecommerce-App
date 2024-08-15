@@ -1,6 +1,6 @@
+import 'package:ecommerceapp/screens/login.dart';
 import 'package:ecommerceapp/screens/register.dart';
 import 'package:flutter/material.dart';
-
 void main(){
   runApp(const Ecommerce());
 }
@@ -11,7 +11,7 @@ class Ecommerce extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Register(),
+      home: Login(),
     );
   }
 }
