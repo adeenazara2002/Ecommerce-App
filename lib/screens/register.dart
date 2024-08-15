@@ -203,12 +203,12 @@ class _RegisterState extends State<Register> {
                         margin: EdgeInsets.only(left: 40),
                         child: ElevatedButton(
                           onPressed: () {
-                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Login(),
-                                ),
-                              );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Login(),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color.fromRGBO(170, 20, 240, 1),
@@ -229,7 +229,23 @@ class _RegisterState extends State<Register> {
                             ),
                           ),
                         ),
-                      )
+                      ),
+
+                      // text container
+
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 70),
+                        child: Text(
+                          'Already have an account Sign In?',
+                          style: TextStyle(
+                              fontSize: 14.95,
+                              fontWeight: FontWeight.w400,
+                              color: AppColors.textColor),
+                        ),
+                      ),
                     ],
                   ),
                 ),
