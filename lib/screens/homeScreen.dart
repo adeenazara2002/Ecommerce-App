@@ -529,7 +529,16 @@ class _HomeState extends State<Home> {
                             ],
                           ),
 
-                          // === LATEST PRODUCTS ===
+                         
+
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+               // === LATEST PRODUCTS ===
 
                           Stack(
                 children: [
@@ -560,13 +569,95 @@ class _HomeState extends State<Home> {
                 ],
               ),
 
+   // ======
 
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+   Column(
+              children: [
+                Row(
+                  children: [
+                    Padding(padding: EdgeInsets.only(left: 5 , right: 20)),
+                    Container(
+                        height: 80,
+                        width: 310,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+
+                              children: [
+                                Padding(
+                                    padding:
+                                        EdgeInsets.only(left: 10, top: 60)),
+                                        Container(
+                                           height: 70,
+                                width: 80,
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(244, 238, 231, 1),
+                                  borderRadius: BorderRadius.circular(10),
+                                  border: Border.all(
+                                    color: Color.fromRGBO(244, 238, 231, 1),
+                                  ),
+                                ),
+                                         child: Image.asset('assets/images/head.jpg'),
+                                        ),
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 10,
+                                )),
+                                Text(
+                                  'Headphone Holder',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(54, 52, 49, 1),
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14),
+                                ),
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 20,
+                                )),
+                                Text(
+                                  '(144.6)',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(154, 153, 152, 1),
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 12),
+                                ),
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 5,
+                                )),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(255, 176, 1, 1),
+                                  size: 20,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(padding: EdgeInsets.only(left: 90)),
+                                Text(
+                                  '\$34.90',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(170, 20, 240, 1),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500),
+                                )
+                              ],
+                            )
+                          ],
+                        )),
+                  ],
+                )
+              ],
+            ),
+
             ],
           ),
         ),
