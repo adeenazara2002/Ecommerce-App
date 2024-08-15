@@ -262,7 +262,8 @@ class _RegisterState extends State<Register> {
                 ),
               ],
               // purple container ended
-            )),
+            )
+            ),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/screens/homeScreen.dart';
 import 'package:ecommerceapp/screens/login.dart';
 import 'package:ecommerceapp/screens/register.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class Ecommerce extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Register(),
+      home: Home(),
     );
   }
 }
