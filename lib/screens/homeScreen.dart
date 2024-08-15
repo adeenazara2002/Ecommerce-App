@@ -1,4 +1,5 @@
 import 'package:ecommerceapp/widgets/colors.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -49,6 +50,7 @@ class _HomeState extends State<Home> {
               ),
 
               // ==== PURPLE CONTAINER ====
+
               Stack(
                 children: [
                   Container(
@@ -93,7 +95,9 @@ class _HomeState extends State<Home> {
                                   fontSize: 13.8,
                                 ),
                               ),
-                              SizedBox(height: 15,),
+                              SizedBox(
+                                height: 15,
+                              ),
                               Text(
                                 '\$290.00',
                                 style: TextStyle(
@@ -111,7 +115,8 @@ class _HomeState extends State<Home> {
 
                   // Shoe Image Positioned above the container
                   Positioned(
-                    top: -10, // Adjust this value to control how much the image floats above the container
+                    top:
+                        -10, // Adjust this value to control how much the image floats above the container
                     right: 15, // Adjust the horizontal position
                     bottom: -20,
                     child: Image.asset(
@@ -119,6 +124,166 @@ class _HomeState extends State<Home> {
                       height: 100, // Adjust the size of the shoe image
                     ),
                   ),
+                ],
+              ),
+
+              // ==== CATEGORY CONTAINER ====
+
+              Stack(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20, top: 70)),
+                      Text(
+                        'Category',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: AppColors.homeColor),
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(
+                        left: 210,
+                      )),
+                      Text(
+                        'See All',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                          color: AppColors.homeColor,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+
+              // === SMALL CATEGORY BOXES CONTANIER ===
+
+              Stack(
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20)),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(170, 20, 240, 1),
+                            foregroundColor: Color.fromRGBO(242, 242, 242, 1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15.0),
+                            child: Text(
+                              'All',
+                              style: TextStyle(
+                                  fontSize: 12.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+                        // 2
+                        Padding(padding: EdgeInsets.only(left: 10)),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(242, 242, 242, 1),
+                            foregroundColor: Color.fromRGBO(54, 52, 49, 1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15.0),
+                            child: Text(
+                              'Electronic',
+                              style: TextStyle(
+                                  fontSize: 12.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+
+                        // 3
+                        Padding(padding: EdgeInsets.only(left: 10)),
+
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(242, 242, 242, 1),
+                            foregroundColor: Color.fromRGBO(54, 52, 49, 1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15.0),
+                            child: Text(
+                              'Fashion',
+                              style: TextStyle(
+                                  fontSize: 12.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+                        // 4
+                        Padding(padding: EdgeInsets.only(left: 10)),
+
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(242, 242, 242, 1),
+                            foregroundColor: Color.fromRGBO(54, 52, 49, 1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15.0),
+                            child: Text(
+                              'Shoes',
+                              style: TextStyle(
+                                  fontSize: 12.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+
+                        
+                        // 4
+                        Padding(padding: EdgeInsets.only(left: 10)),
+
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(242, 242, 242, 1),
+                            foregroundColor: Color.fromRGBO(54, 52, 49, 1),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15.0),
+                            child: Text(
+                              'Furniture',
+                              style: TextStyle(
+                                  fontSize: 12.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ],
