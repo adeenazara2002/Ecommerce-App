@@ -65,29 +65,58 @@ class _HomeState extends State<Home> {
                     child: Row(
                       children: [
                         Container(
+                          padding: EdgeInsets.only(left: 20, top: 30),
                           width: MediaQuery.of(context).size.width * 0.5,
                           decoration: BoxDecoration(
-                            color: AppColors.heartColor,
+                            color: AppColors.secondaryColor,
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: AppColors.heartColor,
+                              color: AppColors.secondaryColor,
                             ),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Nike Air Max 270',
+                                style: TextStyle(
+                                  color: AppColors.primaryColor,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18.4,
+                                ),
+                              ),
+                              Text(
+                                'Men\'s shoes',
+                                style: TextStyle(
+                                  color: AppColors.minTextColor,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 13.8,
+                                ),
+                              ),
+                              SizedBox(height: 15,),
+                              Text(
+                                '\$290.00',
+                                style: TextStyle(
+                                  color: AppColors.primaryColor,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 23,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
-                  
+
                   // Shoe Image Positioned above the container
                   Positioned(
                     top: -10, // Adjust this value to control how much the image floats above the container
                     right: 15, // Adjust the horizontal position
                     bottom: -20,
-                    // bottom: 20,
                     child: Image.asset(
                       './assets/images/shoe-bg.png',
                       height: 100, // Adjust the size of the shoe image
-                      // width: 200,
                     ),
                   ),
                 ],
