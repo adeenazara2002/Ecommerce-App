@@ -219,7 +219,7 @@ class _RegisterState extends State<Register> {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 60.0, vertical: 20.0),
+                                horizontal: 65.0, vertical: 20.0),
                             child: Text(
                               'Create Account',
                               style: TextStyle(
