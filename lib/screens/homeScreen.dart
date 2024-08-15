@@ -23,11 +23,9 @@ class _HomeState extends State<Home> {
             children: [
               // Navbar
               Container(
-                padding: EdgeInsets.only(
-                    top: 80, left: 20, right: 20),
+                padding: EdgeInsets.only(top: 80, left: 20, right: 20),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment
-                      .spaceBetween, 
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
                       Icons.menu,
@@ -54,8 +52,7 @@ class _HomeState extends State<Home> {
               // ==== PURPLE CONTAINER ====
 
               Container(
-                margin:
-                    EdgeInsets.only(top: 30), 
+                margin: EdgeInsets.only(top: 30, left: 15, right: 15),
                 height: 150,
                 width: 360,
                 decoration: BoxDecoration(
@@ -64,6 +61,35 @@ class _HomeState extends State<Home> {
                   border: Border.all(
                     color: Color.fromRGBO(170, 20, 240, 1),
                   ),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.5,
+
+                      decoration: BoxDecoration(
+                        color: AppColors.heartColor,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: AppColors.heartColor,
+                        ),
+                      ),
+                    ),
+
+                  // === container 2 ===
+                  Container(
+                      // width: MediaQuery.of(context).size.width,
+
+                      // decoration: BoxDecoration(
+                      //   color: AppColors.heartColor,
+                      //   borderRadius: BorderRadius.circular(20),
+                      //   border: Border.all(
+                      //     color: AppColors.heartColor,
+                      //   ),
+                      // ),
+                      child: Image.asset('./assets/images/shoe-bg.png'),
+                    ),
+                  ],
                 ),
               ),
             ],
