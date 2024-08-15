@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
                       ),
 
                       SizedBox(
-                        height: 150,
+                        height: 100,
                       ),
 
                       // === text container 2 ===
@@ -152,7 +152,8 @@ class _LoginState extends State<Login> {
                       Container(
                         margin: EdgeInsets.only(left: 40),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color.fromRGBO(170, 20, 240, 1),
                             foregroundColor: Color.fromRGBO(255, 255, 255, 1),

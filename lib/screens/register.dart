@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/screens/login.dart';
 import 'package:ecommerceapp/widgets/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -201,7 +202,14 @@ class _RegisterState extends State<Register> {
                       Container(
                         margin: EdgeInsets.only(left: 40),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                             Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Login(),
+                                ),
+                              );
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color.fromRGBO(170, 20, 240, 1),
                             foregroundColor: Color.fromRGBO(255, 255, 255, 1),
