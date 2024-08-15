@@ -317,7 +317,8 @@ class _HomeState extends State<Home> {
                 ],
               ),
 
-              // column products started
+              // === Products started ===
+
               // container 1
               Column(
                 children: [
@@ -342,7 +343,7 @@ class _HomeState extends State<Home> {
                                 Icon(
                                   Icons.favorite,
                                   color: Color.fromRGBO(206, 206, 206, 1),
-                                  size: 30,
+                                  size: 20,
                                 ),
                               ],
                             ),
@@ -444,7 +445,7 @@ class _HomeState extends State<Home> {
                                           Icons.favorite,
                                           color:
                                               Color.fromRGBO(206, 206, 206, 1),
-                                          size: 30,
+                                          size: 20,
                                         ),
                                       ],
                                     ),
@@ -527,6 +528,39 @@ class _HomeState extends State<Home> {
                               ),
                             ],
                           ),
+
+                          // === LATEST PRODUCTS ===
+
+                          Stack(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20, top: 70)),
+                      Text(
+                        'Latest Products',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: AppColors.homeColor),
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(
+                        left: 150,
+                      )),
+                      Text(
+                        'See All',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                          color: AppColors.homeColor,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+
+
                         ],
                       ),
                     ],
