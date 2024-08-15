@@ -43,61 +43,11 @@ class _LoginState extends State<Login> {
                         child: Image.asset('assets/images/Logo.png'),
                       ),
 
-                      // === text container ===
                       SizedBox(
-                        height: 10,
+                        height: 150,
                       ),
 
-                      Container(
-                        padding: EdgeInsets.only(left: 40),
-                        child: Text(
-                          'Full Name',
-                          style: TextStyle(
-                              fontSize: 14.95,
-                              fontWeight: FontWeight.w400,
-                              color: AppColors.textColor),
-                        ),
-                      ),
-
-                      // === textfield 1
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 40),
-                        height: 55,
-                        width: 280,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: AppColors.inputBoxColor,
-                          ),
-                        ),
-                        child: TextField(
-                          controller: fullnameController,
-                          decoration: InputDecoration(
-                            hintText: 'Enter your Name',
-                            hintStyle: TextStyle(
-                                color: AppColors.textColor,
-                                fontSize: 14.95,
-                                fontWeight: FontWeight.w400),
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.symmetric(
-                              vertical: 20.0,
-                              horizontal: 10.0,
-                            ),
-                          ),
-                          style: TextStyle(
-                            color: Color.fromRGBO(143, 143, 158, 1),
-                          ),
-                        ),
-                      ),
-
-                      // === text container 2===
-
-                      SizedBox(
-                        height: 10,
-                      ),
+                      // === text container 2 ===
 
                       Container(
                         padding: EdgeInsets.only(left: 40),
@@ -110,11 +60,12 @@ class _LoginState extends State<Login> {
                         ),
                       ),
 
-                      // === textfield 2
-
                       SizedBox(
                         height: 10,
                       ),
+
+                      // === textfield 2
+
                       Container(
                         margin: EdgeInsets.only(left: 40),
                         height: 55,
@@ -161,7 +112,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),
 
-                      // === textfield 3
+                      // === textfield 3 ===
                       SizedBox(
                         height: 10,
                       ),
