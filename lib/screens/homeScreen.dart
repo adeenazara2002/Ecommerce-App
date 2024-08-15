@@ -257,8 +257,7 @@ class _HomeState extends State<Home> {
                           ),
                         ),
 
-                        
-                        // 4
+                        // 5
                         Padding(padding: EdgeInsets.only(left: 10)),
 
                         ElevatedButton(
@@ -283,6 +282,37 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
+                  )
+                ],
+              ),
+
+              // === POPULAR PRODUCTS ===
+
+              Stack(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20, top: 70)),
+                      Text(
+                        'Popular Products',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: AppColors.homeColor),
+                      ),
+                      Padding(
+                          padding: EdgeInsets.only(
+                        left: 150,
+                      )),
+                      Text(
+                        'See All',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                          color: AppColors.homeColor,
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
