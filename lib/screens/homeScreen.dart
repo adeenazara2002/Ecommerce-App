@@ -402,7 +402,7 @@ class _HomeState extends State<Home> {
                                   children: [
                                     Padding(padding: EdgeInsets.only(left: 10)),
                                     Text(
-                                      '\$290.00',
+                                      '\$135.00',
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(170, 20, 240, 1),
@@ -465,7 +465,7 @@ class _HomeState extends State<Home> {
                                                 padding: EdgeInsets.only(
                                                     left: 10, top: 30)),
                                             Text(
-                                              'Leather Women Bag',
+                                              'Wireless Headphone',
                                               style: TextStyle(
                                                   color: Color.fromRGBO(
                                                       54, 52, 49, 1),
@@ -512,7 +512,7 @@ class _HomeState extends State<Home> {
                                                 padding:
                                                     EdgeInsets.only(left: 10)),
                                             Text(
-                                              '\$290.00',
+                                              '\$65.00',
                                               style: TextStyle(
                                                   color: Color.fromRGBO(
                                                       170, 20, 240, 1),
@@ -572,63 +572,79 @@ class _HomeState extends State<Home> {
                   Row(
                     children: [
                       Padding(padding: EdgeInsets.only(left: 20, bottom: 100)),
-                      Container(
-                        height: 80,
-                        width: 320,
-                        decoration: BoxDecoration(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            Container(
-                              padding: EdgeInsets.only(top: 10 , bottom: 10),
-                              margin: EdgeInsets.only(left: 10),
-                              height: 60,
-                              width: 90,
-                              decoration: BoxDecoration(
-                                color: Color.fromRGBO(244, 238, 231, 1),
-                                borderRadius: BorderRadius.circular(5),
-                                border: Border.all(
-                                  color: Color.fromRGBO(244, 238, 231, 1),
-                                ),
-                              ),
-                            
-                              child: Image.asset('assets/images/head.jpg')
-                              ,
-                            ),
-                            // text 
-                            Padding(padding: EdgeInsets.only(left: 10)),
+                      // Adjust the Container widget where you want to place the price
+Container(
+  height: 80,
+  width: 320,
+  decoration: BoxDecoration(
+    color: Color.fromRGBO(255, 255, 255, 1),
+    borderRadius: BorderRadius.circular(10),
+    border: Border.all(
+      color: Color.fromRGBO(255, 255, 255, 1),
+    ),
+  ),
+  child: Row(
+    children: [
+      Container(
+        padding: EdgeInsets.only(top: 10, bottom: 10),
+        margin: EdgeInsets.only(left: 10),
+        height: 60,
+        width: 90,
+        decoration: BoxDecoration(
+          color: Color.fromRGBO(244, 238, 231, 1),
+          borderRadius: BorderRadius.circular(5),
+          border: Border.all(
+            color: Color.fromRGBO(244, 238, 231, 1),
+          ),
+        ),
+        child: Image.asset('assets/images/head.jpg'),
+      ),
+      // Add a SizedBox to provide space between image and text
+      SizedBox(width: 10),
+      // Wrap text and price in a Column
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Headphone holder',
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 14,
+              color: AppColors.homeColor,
+            ),
+          ),
+          SizedBox(height: 5), // Add some space between text and price
+          Text(
+            '\$34.90',
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 16,
+              color: AppColors.homeColor,
+            ),
+          ),
+        ],
+      ),
+      // Other items
+      Padding(padding: EdgeInsets.only(left: 20)),
+      Text(
+        '(1446)',
+        style: TextStyle(
+          fontWeight: FontWeight.w400,
+          fontSize: 12,
+          color: Color.fromRGBO(154, 153, 152, 1),
+        ),
+      ),
+      Padding(padding: EdgeInsets.only(left: 5)),
+      Icon(
+        Icons.star,
+        color: Color.fromRGBO(255, 176, 1, 1),
+        size: 20,
+      ),
+    ],
+  ),
+)
 
-                            Text('Headphone holder', 
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14, 
-                              color: AppColors.homeColor,
-                            ),),
-                            Padding(padding: EdgeInsets.only(left: 20)),
-
-                            Text('(1446)', 
-                            style: TextStyle(
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12, 
-                              color: Color.fromRGBO(154, 153, 152, 1)),
-                            ),
-                            Padding(padding: EdgeInsets.only(left: 5)),
-
-                            Icon(
-                                              Icons.star,
-                                              color: Color.fromRGBO(
-                                                  255, 176, 1, 1),
-                                              size: 20,
-                                            ),
-
-                          ],
-                        ),
-                      ),
                     ],
                   )
                 ],
