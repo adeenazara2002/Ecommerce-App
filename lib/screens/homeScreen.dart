@@ -528,9 +528,6 @@ class _HomeState extends State<Home> {
                               ),
                             ],
                           ),
-
-                         
-
                         ],
                       ),
                     ],
@@ -538,9 +535,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
 
-               // === LATEST PRODUCTS ===
+              // === LATEST PRODUCTS ===
 
-                          Stack(
+              Stack(
                 children: [
                   Row(
                     children: [
@@ -569,16 +566,15 @@ class _HomeState extends State<Home> {
                 ],
               ),
 
-   // ======
-
-   Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(padding: EdgeInsets.only(left: 5 , right: 20)),
-                    Container(
+              // ======
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20, bottom: 100)),
+                      Container(
                         height: 80,
-                        width: 310,
+                        width: 320,
                         decoration: BoxDecoration(
                           color: Color.fromRGBO(255, 255, 255, 1),
                           borderRadius: BorderRadius.circular(10),
@@ -586,78 +582,57 @@ class _HomeState extends State<Home> {
                             color: Color.fromRGBO(255, 255, 255, 1),
                           ),
                         ),
-                        child: Column(
+                        child: Row(
                           children: [
-                            Row(
-
-                              children: [
-                                Padding(
-                                    padding:
-                                        EdgeInsets.only(left: 10, top: 60)),
-                                        Container(
-                                           height: 70,
-                                width: 80,
-                                decoration: BoxDecoration(
+                            Container(
+                              padding: EdgeInsets.only(top: 10 , bottom: 10),
+                              margin: EdgeInsets.only(left: 10),
+                              height: 60,
+                              width: 90,
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(244, 238, 231, 1),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(
                                   color: Color.fromRGBO(244, 238, 231, 1),
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(
-                                    color: Color.fromRGBO(244, 238, 231, 1),
-                                  ),
                                 ),
-                                         child: Image.asset('assets/images/head.jpg'),
-                                        ),
-                                Padding(
-                                    padding: EdgeInsets.only(
-                                  left: 10,
-                                )),
-                                Text(
-                                  'Headphone Holder',
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(54, 52, 49, 1),
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
-                                ),
-                                Padding(
-                                    padding: EdgeInsets.only(
-                                  left: 20,
-                                )),
-                                Text(
-                                  '(144.6)',
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(154, 153, 152, 1),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 12),
-                                ),
-                                Padding(
-                                    padding: EdgeInsets.only(
-                                  left: 5,
-                                )),
-                                Icon(
-                                  Icons.star,
-                                  color: Color.fromRGBO(255, 176, 1, 1),
-                                  size: 20,
-                                ),
-                              ],
+                              ),
+                            
+                              child: Image.asset('assets/images/head.jpg')
+                              ,
                             ),
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 90)),
-                                Text(
-                                  '\$34.90',
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(170, 20, 240, 1),
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500),
-                                )
-                              ],
-                            )
-                          ],
-                        )),
-                  ],
-                )
-              ],
-            ),
+                            // text 
+                            Padding(padding: EdgeInsets.only(left: 10)),
 
+                            Text('Headphone holder', 
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14, 
+                              color: AppColors.homeColor,
+                            ),),
+                            Padding(padding: EdgeInsets.only(left: 20)),
+
+                            Text('(1446)', 
+                            style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12, 
+                              color: Color.fromRGBO(154, 153, 152, 1)),
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 5)),
+
+                            Icon(
+                                              Icons.star,
+                                              color: Color.fromRGBO(
+                                                  255, 176, 1, 1),
+                                              size: 20,
+                                            ),
+
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ],
           ),
         ),
