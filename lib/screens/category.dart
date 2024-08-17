@@ -757,6 +757,31 @@ class _CategoryState extends State<Category> {
               SizedBox(
                 height: 10,
               ),
+              // bottom navigation
+
+              BottomNavigationBar(
+                items: const <BottomNavigationBarItem>[
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.home,
+                      color: Color.fromRGBO(170, 20, 240, 1),
+                      size: 30,
+                    ),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.favorite_outline_outlined),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.shopping_cart_outlined),
+                    label: '',
+                  ),
+                ],
+                // currentIndex: _selectedIndex,
+                // selectedItemColor: Colors.amber[800],
+                // onTap: _onItemTapped,
+              ),
             ],
           ),
         ),
