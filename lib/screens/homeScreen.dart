@@ -620,7 +620,7 @@ Container(
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 16,
-              color: AppColors.homeColor,
+              color: AppColors.secondaryColor,
             ),
           ),
         ],
