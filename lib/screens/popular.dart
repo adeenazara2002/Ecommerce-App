@@ -2,14 +2,14 @@ import 'package:ecommerceapp/widgets/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Category extends StatefulWidget {
-  const Category({super.key});
+class PopularProduct extends StatefulWidget {
+  const PopularProduct({super.key});
 
   @override
-  State<Category> createState() => _CategoryState();
+  State<PopularProduct> createState() => _PopularProductState();
 }
 
-class _CategoryState extends State<Category> {
+class _PopularProductState extends State<PopularProduct> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
