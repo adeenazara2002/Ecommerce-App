@@ -2,14 +2,14 @@ import 'package:ecommerceapp/widgets/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ProductDetails extends StatefulWidget {
-  const ProductDetails({super.key});
+class Cart extends StatefulWidget {
+  const Cart({super.key});
 
   @override
-  State<ProductDetails> createState() => _ProductDetailsState();
+  State<Cart> createState() => _CartState();
 }
 
-class _ProductDetailsState extends State<ProductDetails> {
+class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       size: 30,
                     ),
                     Text(
-                      'Product Details',
+                      'Category',
                       style: TextStyle(
                         color: AppColors.homeColor,
                         fontSize: 16,
@@ -41,267 +41,101 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ),
                     Icon(
-                      Icons.favorite_border_outlined,
+                      Icons.search_sharp,
                       color: AppColors.homeColor,
-                      size: 25,
+                      size: 30,
                     ),
                   ],
                 ),
               ),
 
-              // main column start
+              // ==== FIRST CONTAINER ====
 
-              SizedBox(
-                height: 20,
-              ),
-
-              Column(
+              Stack(
                 children: [
-                  Center(
+                  Container(
+                    margin: EdgeInsets.only(top: 30, left: 15, right: 15),
+                    height: 130,
+                    width: 360,
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(170, 20, 240, 1),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Color.fromRGBO(170, 20, 240, 1),
+                      ),
+                    ),
                     child: Row(
                       children: [
-                        Padding(
-                            padding: EdgeInsets.only(
-                          left: 30,
-                        )),
-                        CircleAvatar(
-                          radius: 150,
-                          backgroundImage: AssetImage(
-                            'assets/images/watch.jpg',
+                        Container(
+                          padding: EdgeInsets.only(left: 20, top: 30),
+                          width: MediaQuery.of(context).size.width * 0.5,
+                          decoration: BoxDecoration(
+                            color: AppColors.primaryColor,
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(
+                              color: AppColors.primaryColor,
+                            ),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Wooden Coffe Table',
+                                style: TextStyle(
+                                  color: AppColors.homeColor,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color.fromRGBO(255, 176, 1, 1),
+                                    size: 15,
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 5)),
+                                  Text(
+                                    '1273 reviews',
+                                    style: TextStyle(
+                                      color: Color.fromRGBO(154, 153, 152, 1),
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                '\$290.00',
+                                style: TextStyle(
+                                  color: AppColors.secondaryColor,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
+                        // ==== SECOND CONTAINER ====
+                        Padding(padding: EdgeInsets.only(left: 40)),
+                        Container(
+                          // padding: EdgeInsets.only(left: 50),
+                          width: 90,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(
+                              color: Colors.red,
+                            ),
+                          ),
+                          // child: Image.asset(''),
+                        )
                       ],
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Smart Watch',
-                        style: TextStyle(
-                          color: Color.fromRGBO(54, 52, 49, 1),
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Unisex',
-                        style: TextStyle(
-                          color: Color.fromRGBO(154, 153, 152, 1),
-                          fontWeight: FontWeight.w400,
-                          fontSize: 13,
-                        ),
-                      ),
-                      Padding(padding: EdgeInsets.only(left: 180)),
-                      Text(
-                        '\$345.00',
-                        style: TextStyle(
-                            color: Color.fromRGBO(170, 20, 240, 1),
-                            fontWeight: FontWeight.w600,
-                            fontSize: 24),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Icon(
-                        Icons.star,
-                        color: Color.fromRGBO(255, 176, 1, 1),
-                        size: 20,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Color.fromRGBO(255, 176, 1, 1),
-                        size: 20,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Color.fromRGBO(255, 176, 1, 1),
-                        size: 20,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Color.fromRGBO(255, 176, 1, 1),
-                        size: 20,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Color.fromRGBO(255, 176, 1, 1),
-                        size: 20,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-
-              // === color text column ===
-
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20, top: 40)),
-                      Text(
-                        'Color',
-                        style: TextStyle(
-                          color: Color.fromRGBO(54, 52, 49, 1),
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20, top: 20)),
-                      CircleAvatar(
-                        backgroundColor: Color.fromRGBO(170, 20, 240, 1),
-                        radius: 20,
-                      ),
-                      Padding(padding: EdgeInsets.only(left: 15)),
-                      CircleAvatar(
-                        backgroundColor: Color.fromRGBO(35, 164, 247, 1),
-                        radius: 20,
-                      ),
-                      Padding(padding: EdgeInsets.only(left: 15)),
-                      CircleAvatar(
-                        backgroundColor: Color.fromRGBO(54, 52, 49, 1),
-                        radius: 20,
-                      ),
-                      Padding(padding: EdgeInsets.only(left: 15)),
-                      CircleAvatar(
-                          backgroundColor: Color.fromRGBO(154, 153, 152, 1),
-                          radius: 20),
-                    ],
-                  ),
-                ],
-              ),
-
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20, top: 80)),
-                      Text(
-                        'About',
-                        style: TextStyle(
-                          color: Color.fromRGBO(54, 52, 49, 1),
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Macenus corpus magna vitae convallis congue',
-                        style: TextStyle(
-                          color: Color.fromRGBO(122, 122, 122, 1),
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Macenus corpus magna vitae convallis congue',
-                        style: TextStyle(
-                          color: Color.fromRGBO(122, 122, 122, 1),
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Macenus corpus magna vitae convallis congue',
-                        style: TextStyle(
-                          color: Color.fromRGBO(122, 122, 122, 1),
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20)),
-                      Text(
-                        'Macenus corpus magna vitae convallis congue',
-                        style: TextStyle(
-                            color: Color.fromRGBO(122, 122, 122, 1),
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 18, top: 100)),
-                      ElevatedButton(
-                        onPressed: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //       builder: (context) => const Cart()),
-                          // );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(170, 20, 240, 1),
-                          foregroundColor: Color.fromRGBO(255, 255, 255, 1),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(40.0),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 90.0, vertical: 15.0),
-                          child: Text(
-                            'ADD TO CART',
-                            style: TextStyle(
-                                fontSize: 15.0,
-                                fontFamily: 'Poppins-Regular',
-                                fontWeight: FontWeight.w800),
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ],
               ),

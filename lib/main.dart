@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/screens/cart.dart';
 import 'package:ecommerceapp/screens/category.dart';
 import 'package:ecommerceapp/screens/homeScreen.dart';
 import 'package:ecommerceapp/screens/login.dart';
@@ -15,7 +16,7 @@ class Ecommerce extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProductDetails(),
+      home: Cart(),
     );
   }
 }
