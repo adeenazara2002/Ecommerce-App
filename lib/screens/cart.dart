@@ -33,7 +33,7 @@ class _CartState extends State<Cart> {
                       size: 30,
                     ),
                     Text(
-                      'Category',
+                      'Cart',
                       style: TextStyle(
                         color: AppColors.homeColor,
                         fontSize: 16,
@@ -41,7 +41,7 @@ class _CartState extends State<Cart> {
                       ),
                     ),
                     Icon(
-                      Icons.search_sharp,
+                      Icons.shopping_cart_outlined,
                       color: AppColors.homeColor,
                       size: 30,
                     ),
@@ -55,11 +55,11 @@ class _CartState extends State<Cart> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(top: 30, left: 15, right: 15),
-                    height: 130,
+                    height: 100,
                     width: 360,
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(170, 20, 240, 1),
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       border: Border.all(
                         color: Color.fromRGBO(170, 20, 240, 1),
                       ),
@@ -68,10 +68,10 @@ class _CartState extends State<Cart> {
                       children: [
                         Container(
                           padding: EdgeInsets.only(left: 20, top: 30),
-                          width: MediaQuery.of(context).size.width * 0.5,
+                          width: MediaQuery.of(context).size.width * 0.65,
                           decoration: BoxDecoration(
                             color: AppColors.primaryColor,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             border: Border.all(
                               color: AppColors.primaryColor,
                             ),
@@ -79,13 +79,23 @@ class _CartState extends State<Cart> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                'Wooden Coffe Table',
-                                style: TextStyle(
-                                  color: AppColors.homeColor,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 14,
-                                ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Wooden Coffe Table',
+                                    style: TextStyle(
+                                      color: AppColors.homeColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 50)),
+                                  Icon(
+                                    Icons.add,
+                                    color: Color.fromRGBO(54, 52, 49, 1),
+                                    size: 20,
+                                  ),
+                                ],
                               ),
                               Row(
                                 children: [
@@ -103,27 +113,42 @@ class _CartState extends State<Cart> {
                                       fontSize: 12,
                                     ),
                                   ),
+                                  Padding(padding: EdgeInsets.only(left: 89)),
+                                  Icon(
+                                    Icons.minimize_outlined,
+                                    color: Color.fromRGBO(54, 52, 49, 1),
+                                    size: 20,
+                                  ),
                                 ],
                               ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Text(
-                                '\$290.00',
-                                style: TextStyle(
-                                  color: AppColors.secondaryColor,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                ),
+                              Row(
+                                children: [
+                                  Text(
+                                    '\$290.00',
+                                    style: TextStyle(
+                                      color: AppColors.secondaryColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 120)),
+                                  Text(
+                                    '1',
+                                    style: TextStyle(
+                                      color: Color.fromRGBO(54, 52, 49, 1),
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
                         ),
                         // ==== SECOND CONTAINER ====
-                        Padding(padding: EdgeInsets.only(left: 40)),
+                        Padding(padding: EdgeInsets.only(left: 5)),
                         Container(
                           // padding: EdgeInsets.only(left: 50),
-                          width: 90,
+                          width: 80,
                           height: 80,
                           decoration: BoxDecoration(
                             color: Colors.red,
