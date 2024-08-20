@@ -2,14 +2,14 @@ import 'package:ecommerceapp/widgets/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class ProductDetails extends StatefulWidget {
+  const ProductDetails({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<ProductDetails> createState() => _ProductDetailsState();
 }
 
-class _HomeState extends State<Home> {
+class _ProductDetailsState extends State<ProductDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,12 +28,12 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
-                      Icons.menu,
+                      Icons.arrow_back_outlined,
                       color: AppColors.homeColor,
                       size: 30,
                     ),
                     Text(
-                      'Home',
+                      'Product Details',
                       style: TextStyle(
                         color: AppColors.homeColor,
                         fontSize: 16,
@@ -41,91 +41,38 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Icon(
-                      Icons.search_sharp,
+                      Icons.favorite_border_outlined,
                       color: AppColors.homeColor,
-                      size: 30,
+                      size: 25,
                     ),
                   ],
                 ),
               ),
 
-              // ==== PURPLE CONTAINER ====
+              // main column start
+                          SizedBox(height: 20,),
 
-              Stack(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(top: 30, left: 15, right: 15),
-                    height: 130,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(170, 20, 240, 1),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: Color.fromRGBO(170, 20, 240, 1),
-                      ),
-                    ),
-                    child: Row(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.only(left: 20, top: 30),
-                          width: MediaQuery.of(context).size.width * 0.5,
-                          decoration: BoxDecoration(
-                            color: AppColors.secondaryColor,
-                            borderRadius: BorderRadius.circular(20),
-                            border: Border.all(
-                              color: AppColors.secondaryColor,
+                Column(
+                  children: [
+                    
+                    Center(
+                      child: Row(
+                        
+                        children: [
+                          
+                          Padding(padding: EdgeInsets.only(left: 30 ,)),
+                          
+                          CircleAvatar(
+                            radius: 150,
+                            backgroundImage: AssetImage(
+                              'assets/images/watch.jpg',
                             ),
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Nike Air Max 270',
-                                style: TextStyle(
-                                  color: AppColors.primaryColor,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 18.4,
-                                ),
-                              ),
-                              Text(
-                                'Men\'s shoes',
-                                style: TextStyle(
-                                  color: AppColors.minTextColor,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 13.8,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text(
-                                '\$290.00',
-                                style: TextStyle(
-                                  color: AppColors.primaryColor,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 23,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-
-                  // Shoe Image Positioned above the container
-                  Positioned(
-                    top:
-                        -10, // Adjust this value to control how much the image floats above the container
-                    right: 15, // Adjust the horizontal position
-                    bottom: -20,
-                    child: Image.asset(
-                      './assets/images/shoe-bg.png',
-                      height: 100, // Adjust the size of the shoe image
-                    ),
-                  ),
-                ],
-              ),
+                  ],
+                ),
 
               // ==== CATEGORY CONTAINER ====
 
