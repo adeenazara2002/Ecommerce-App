@@ -51,100 +51,169 @@ class _ProductDetailsState extends State<ProductDetails> {
 
               // main column start
 
-                          SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
 
-                Column(
-                  children: [
-                    
-                    Center(
-                      child: Row(
-                        
-                        children: [
-                          
-                          Padding(padding: EdgeInsets.only(left: 30 ,)),
-                          
-                          CircleAvatar(
-                            radius: 150,
-                            backgroundImage: AssetImage(
-                              'assets/images/watch.jpg',
-                            ),
+              Column(
+                children: [
+                  Center(
+                    child: Row(
+                      children: [
+                        Padding(
+                            padding: EdgeInsets.only(
+                          left: 30,
+                        )),
+                        CircleAvatar(
+                          radius: 150,
+                          backgroundImage: AssetImage(
+                            'assets/images/watch.jpg',
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-          SizedBox(height: 20,),
-               Column(
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20)),
+                      Text(
+                        'Smart Watch',
+                        style: TextStyle(
+                          color: Color.fromRGBO(54, 52, 49, 1),
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20)),
+                      Text(
+                        'Unisex',
+                        style: TextStyle(
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 13,
+                        ),
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 180)),
+                      Text(
+                        '\$345.00',
+                        style: TextStyle(
+                            color: Color.fromRGBO(170, 20, 240, 1),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 24),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 20)),
+                      Icon(
+                        Icons.star,
+                        color: Color.fromRGBO(255, 176, 1, 1),
+                        size: 20,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Color.fromRGBO(255, 176, 1, 1),
+                        size: 20,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Color.fromRGBO(255, 176, 1, 1),
+                        size: 20,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Color.fromRGBO(255, 176, 1, 1),
+                        size: 20,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Color.fromRGBO(255, 176, 1, 1),
+                        size: 20,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+              // === color text column ===
+
+              Column(
                   children: [
                     Row(
                       children: [
-                        Padding(padding: EdgeInsets.only(left: 20)),
+                        Padding(padding: EdgeInsets.only(left: 20,top: 40)),
                         Text(
-                          'Smart Watch',
+                          'Color',
                           style: TextStyle(
                             color: Color.fromRGBO(54, 52, 49, 1),
                             fontWeight: FontWeight.w500,
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Padding(padding: EdgeInsets.only(left: 20)),
-                        Text(
-                          'Unisex',
-                          style: TextStyle(
-                            color: Color.fromRGBO(154, 153, 152, 1),
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13,
-                          ),
-                        ),
-                        Padding(padding: EdgeInsets.only(left: 180)),
-                        Text(
-                          '\$345.00',
-                          style: TextStyle(
-                              color: Color.fromRGBO(170, 20, 240, 1),
-                              fontWeight: FontWeight.w600,
-                              fontSize: 24),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Padding(padding: EdgeInsets.only(left: 20)),
-                        Icon(
-                          Icons.star,
-                          color: Color.fromRGBO(255, 176, 1, 1),
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Color.fromRGBO(255, 176, 1, 1),
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Color.fromRGBO(255, 176, 1, 1),
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Color.fromRGBO(255, 176, 1, 1),
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Color.fromRGBO(255, 176, 1, 1),
-                          size: 20,
                         ),
                       ],
                     ),
                   ],
                 ),
 
-              // === SMALL CATEGORY BOXES CONTANIER ===
+                 Column(
+                  children: [
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20 , top: 20)),
+                        CircleAvatar(
+                          backgroundColor: Color.fromRGBO(170, 20, 240, 1),
+                          radius: 20,
+                        ),
+                        Padding(padding: EdgeInsets.only(left: 15)),
+                        CircleAvatar(
+                          backgroundColor: Color.fromRGBO(35, 164, 247, 1),
+                          radius: 20,
+                        ),
+                        Padding(padding: EdgeInsets.only(left: 15)),
+                        CircleAvatar(
+                          backgroundColor: Color.fromRGBO(54, 52, 49, 1),
+                          radius: 20,
+                        ),
+                        Padding(padding: EdgeInsets.only(left: 15)),
+                        CircleAvatar(
+                            backgroundColor: Color.fromRGBO(154, 153, 152, 1),
+                            radius: 20),
+                      ],
+                    ),
+                  ],
+                ),
+
+Column(
+                  children: [
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20, top: 80)),
+                        Text(
+                          'About',
+                          style: TextStyle(
+                            color: Color.fromRGBO(54, 52, 49, 1),
+                            fontWeight: FontWeight.w700,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+
+
 
               Stack(
                 children: [
@@ -636,53 +705,50 @@ class _ProductDetailsState extends State<ProductDetails> {
                   )
                 ],
               ),
-             
             ],
           ),
-          
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-  type: BottomNavigationBarType.fixed, 
-  items: const <BottomNavigationBarItem>[
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.home,
-        color: Color.fromRGBO(170, 20, 240, 1),
-        size: 30,
+        type: BottomNavigationBarType.fixed,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: Color.fromRGBO(170, 20, 240, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_outline_outlined,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_cart_outlined,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_outline,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+        ],
+        // currentIndex: _selectedIndex,
+        // selectedItemColor: Colors.amber[800],
+        // onTap: _onItemTapped,
       ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.favorite_outline_outlined,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.shopping_cart_outlined,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.person_outline,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-  ],
-  // currentIndex: _selectedIndex,
-  // selectedItemColor: Colors.amber[800],
-  // onTap: _onItemTapped,
-),
-
-          );
+    );
   }
 }
