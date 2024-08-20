@@ -58,10 +58,13 @@ class _CartState extends State<Cart> {
                     height: 100,
                     width: 360,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(170, 20, 240, 1),
+                      // color: Color.fromRGBO(170, 20, 240, 1),
+                      color: AppColors.primaryColor,
+
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
-                        color: Color.fromRGBO(170, 20, 240, 1),
+                        // color: Color.fromRGBO(170, 20, 240, 1),
+                        color: AppColors.primaryColor,
                       ),
                     ),
                     child: Row(
@@ -151,13 +154,13 @@ class _CartState extends State<Cart> {
                           width: 80,
                           height: 80,
                           decoration: BoxDecoration(
-                            color: Colors.red,
+                            // color: Colors.red,
                             borderRadius: BorderRadius.circular(5),
                             border: Border.all(
-                              color: Colors.red,
+                              color: AppColors.primaryColor,
                             ),
                           ),
-                          // child: Image.asset(''),
+                          child: Image.asset('assets/images/deskwatch.png'),
                         )
                       ],
                     ),
