@@ -50,6 +50,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
 
               // main column start
+
                           SizedBox(height: 20,),
 
                 Column(
@@ -73,37 +74,75 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                   ],
                 ),
-
-              // ==== CATEGORY CONTAINER ====
-
-              Stack(
-                children: [
-                  Row(
-                    children: [
-                      Padding(padding: EdgeInsets.only(left: 20, top: 70)),
-                      Text(
-                        'Category',
-                        style: TextStyle(
+          SizedBox(height: 20,),
+               Column(
+                  children: [
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20)),
+                        Text(
+                          'Smart Watch',
+                          style: TextStyle(
+                            color: Color.fromRGBO(54, 52, 49, 1),
                             fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: AppColors.homeColor),
-                      ),
-                      Padding(
-                          padding: EdgeInsets.only(
-                        left: 210,
-                      )),
-                      Text(
-                        'See All',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 12,
-                          color: AppColors.homeColor,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20)),
+                        Text(
+                          'Unisex',
+                          style: TextStyle(
+                            color: Color.fromRGBO(154, 153, 152, 1),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 13,
+                          ),
+                        ),
+                        Padding(padding: EdgeInsets.only(left: 180)),
+                        Text(
+                          '\$345.00',
+                          style: TextStyle(
+                              color: Color.fromRGBO(170, 20, 240, 1),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 24),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.only(left: 20)),
+                        Icon(
+                          Icons.star,
+                          color: Color.fromRGBO(255, 176, 1, 1),
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Color.fromRGBO(255, 176, 1, 1),
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Color.fromRGBO(255, 176, 1, 1),
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Color.fromRGBO(255, 176, 1, 1),
+                          size: 20,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Color.fromRGBO(255, 176, 1, 1),
+                          size: 20,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
 
               // === SMALL CATEGORY BOXES CONTANIER ===
 
