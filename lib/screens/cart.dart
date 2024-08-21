@@ -455,7 +455,6 @@ class _CartState extends State<Cart> {
                               Row(
                                 children: [
                                   Padding(padding: EdgeInsets.only(top: 40)),
-
                                   Text(
                                     'Subtotal:',
                                     style: TextStyle(
@@ -470,7 +469,6 @@ class _CartState extends State<Cart> {
                               Row(
                                 children: [
                                   Padding(padding: EdgeInsets.only(top: 30)),
-
                                   Text(
                                     'Discount (%20):',
                                     style: TextStyle(
@@ -481,11 +479,9 @@ class _CartState extends State<Cart> {
                                   ),
                                 ],
                               ),
-
                               Row(
                                 children: [
                                   Padding(padding: EdgeInsets.only(top: 40)),
-
                                   Text(
                                     'Total:',
                                     style: TextStyle(
@@ -500,7 +496,7 @@ class _CartState extends State<Cart> {
                           ),
                         ),
                         // ==== SECOND CONTAINER ====
-                        Padding(padding: EdgeInsets.only(left: 5)),
+                        // Padding(padding: EdgeInsets.only(left: 5)),
                         Container(
                           padding: EdgeInsets.only(left: 20, top: 10),
                           // width: MediaQuery.of(context).size.width * 0.5,
@@ -514,68 +510,101 @@ class _CartState extends State<Cart> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'Select Item',
-                                    style: TextStyle(
-                                      color: Color.fromRGBO(154, 153, 152, 1),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  Padding(padding: EdgeInsets.only(left: 50)),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(padding: EdgeInsets.only(top: 40)),
-
-                                  Text(
-                                    'Subtotal:',
-                                    style: TextStyle(
-                                      color: Color.fromRGBO(154, 153, 152, 1),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  Padding(padding: EdgeInsets.only(left: 89)),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(padding: EdgeInsets.only(top: 30)),
-
-                                  Text(
-                                    'Discount (%20):',
-                                    style: TextStyle(
-                                      color: Color.fromRGBO(154, 153, 152, 1),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                ],
-                              ),
-
-                              Row(
-                                children: [
-                                  Padding(padding: EdgeInsets.only(top: 40)),
-
-                                  Text(
-                                    'Total:',
-                                    style: TextStyle(
-                                      color: Color.fromRGBO(154, 153, 152, 1),
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                              // Row(
+                              //   children: [
+                              //     Text(
+                              //       '3',
+                              //       style: TextStyle(
+                              //         color: Color.fromRGBO(154, 153, 152, 1),
+                              //         fontWeight: FontWeight.w400,
+                              //         fontSize: 14,
+                              //       ),
+                              //     ),
+                              //     Padding(padding: EdgeInsets.only(left: 50)),
+                              //   ],
+                              // ),
+                              // Row(
+                              //   children: [
+                              //     Padding(padding: EdgeInsets.only(top: 40)),
+                              //     Text(
+                              //       '\$290.00',
+                              //       style: TextStyle(
+                              //         color: Color.fromRGBO(154, 153, 152, 1),
+                              //         fontWeight: FontWeight.w400,
+                              //         fontSize: 14,
+                              //       ),
+                              //     ),
+                              //     Padding(padding: EdgeInsets.only(left: 89)),
+                              //   ],
+                              // ),
+                              // Row(
+                              //   children: [
+                              //     Padding(padding: EdgeInsets.only(top: 30)),
+                              //     Text(
+                              //       '\$290.00',
+                              //       style: TextStyle(
+                              //         color: Color.fromRGBO(154, 153, 152, 1),
+                              //         fontWeight: FontWeight.w400,
+                              //         fontSize: 14,
+                              //       ),
+                              //     ),
+                              //   ],
+                              // ),
+                              // Row(
+                              //   children: [
+                              //     Padding(padding: EdgeInsets.only(top: 40)),
+                              //     Text(
+                              //       '\$290.00',
+                              //       style: TextStyle(
+                              //         color: Color.fromRGBO(154, 153, 152, 1),
+                              //         fontWeight: FontWeight.w400,
+                              //         fontSize: 14,
+                              //       ),
+                              //     ),
+                              //   ],
+                              // ),
                             ],
                           ),
                         ),
                       ],
                     ),
+                  ),
+                ],
+              ),
+
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 18, top: 100)),
+                      ElevatedButton(
+                        onPressed: () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //       builder: (context) => const Cart()),
+                          // );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(170, 20, 240, 1),
+                          foregroundColor: Color.fromRGBO(255, 255, 255, 1),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(40.0),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 100.0, vertical: 15.0),
+                          child: Text(
+                            'CHECK OUT',
+                            style: TextStyle(
+                                fontSize: 15.0,
+                                fontFamily: 'Poppins-Regular',
+                                fontWeight: FontWeight.w800),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
