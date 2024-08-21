@@ -510,59 +510,59 @@ class _CartState extends State<Cart> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // Row(
-                              //   children: [
-                              //     Text(
-                              //       '3',
-                              //       style: TextStyle(
-                              //         color: Color.fromRGBO(154, 153, 152, 1),
-                              //         fontWeight: FontWeight.w400,
-                              //         fontSize: 14,
-                              //       ),
-                              //     ),
-                              //     Padding(padding: EdgeInsets.only(left: 50)),
-                              //   ],
-                              // ),
-                              // Row(
-                              //   children: [
-                              //     Padding(padding: EdgeInsets.only(top: 40)),
-                              //     Text(
-                              //       '\$290.00',
-                              //       style: TextStyle(
-                              //         color: Color.fromRGBO(154, 153, 152, 1),
-                              //         fontWeight: FontWeight.w400,
-                              //         fontSize: 14,
-                              //       ),
-                              //     ),
-                              //     Padding(padding: EdgeInsets.only(left: 89)),
-                              //   ],
-                              // ),
-                              // Row(
-                              //   children: [
-                              //     Padding(padding: EdgeInsets.only(top: 30)),
-                              //     Text(
-                              //       '\$290.00',
-                              //       style: TextStyle(
-                              //         color: Color.fromRGBO(154, 153, 152, 1),
-                              //         fontWeight: FontWeight.w400,
-                              //         fontSize: 14,
-                              //       ),
-                              //     ),
-                              //   ],
-                              // ),
-                              // Row(
-                              //   children: [
-                              //     Padding(padding: EdgeInsets.only(top: 40)),
-                              //     Text(
-                              //       '\$290.00',
-                              //       style: TextStyle(
-                              //         color: Color.fromRGBO(154, 153, 152, 1),
-                              //         fontWeight: FontWeight.w400,
-                              //         fontSize: 14,
-                              //       ),
-                              //     ),
-                              //   ],
-                              // ),
+                              Row(
+                                children: [
+                                  Text(
+                                    '3',
+                                    style: TextStyle(
+                                      color: AppColors.homeColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 50)),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Padding(padding: EdgeInsets.only(top: 30)),
+                                  Text(
+                                    '\$290.00',
+                                    style: TextStyle(
+                                      color: AppColors.homeColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Padding(padding: EdgeInsets.only(top: 30)),
+                                  Text(
+                                    '\$290.00',
+                                    style: TextStyle(
+                                      color: AppColors.homeColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                          
+                              Row(
+                                children: [
+                                  Padding(padding: EdgeInsets.only(top: 40)),
+                                  Text(
+                                    '\$290.00',
+                                    style: TextStyle(
+                                     color: AppColors.secondaryColor,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 24,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
