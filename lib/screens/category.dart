@@ -757,53 +757,50 @@ class _CategoryState extends State<Category> {
               // SizedBox(
               //   height: 10,
               // ),
-
-              
             ],
           ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-  type: BottomNavigationBarType.fixed, 
-  items: const <BottomNavigationBarItem>[
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.home,
-        color: Color.fromRGBO(170, 20, 240, 1),
-        size: 30,
+        type: BottomNavigationBarType.fixed,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: Color.fromRGBO(170, 20, 240, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_outline_outlined,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_cart_outlined,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_outline,
+              color: Color.fromRGBO(154, 153, 152, 1),
+              size: 30,
+            ),
+            label: '',
+          ),
+        ],
+        // currentIndex: _selectedIndex,
+        // selectedItemColor: Colors.amber[800],
+        // onTap: _onItemTapped,
       ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.favorite_outline_outlined,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.shopping_cart_outlined,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.person_outline,
-        color: Color.fromRGBO(154, 153, 152, 1),
-        size: 30,
-      ),
-      label: '',
-    ),
-  ],
-  // currentIndex: _selectedIndex,
-  // selectedItemColor: Colors.amber[800],
-  // onTap: _onItemTapped,
-),
-
-          );
+    );
   }
 }

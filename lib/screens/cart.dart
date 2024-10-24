@@ -549,14 +549,13 @@ class _CartState extends State<Cart> {
                                   ),
                                 ],
                               ),
-                          
                               Row(
                                 children: [
                                   Padding(padding: EdgeInsets.only(top: 40)),
                                   Text(
                                     '\$290.00',
                                     style: TextStyle(
-                                     color: AppColors.secondaryColor,
+                                      color: AppColors.secondaryColor,
                                       fontWeight: FontWeight.w500,
                                       fontSize: 24,
                                     ),
